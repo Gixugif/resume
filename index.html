@@ -14,7 +14,8 @@ The <head> of a website generally links to important resources the page will
 need to load. You'll see a lot of <link>s to CSS files for styles and
 <scripts> for JavaScript files to build interactions.
 -->
-  <head>
+
+<head>
     <!-- This tells the browser how to read the document. -->
     <meta charset='utf-8'>
 
@@ -57,25 +58,25 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes'>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <header class='container-fluid header'>
-      <div class='row'>
-        <div class='col-xs-6'>
-          <img class='logo' src='img_src/Udacity_Logo.png' alt='udacity logo' />
+        <div class='row'>
+            <div class='col-xs-6'>
+                <img class='logo' src='img_src/Udacity_Logo.png' alt='udacity logo' />
+            </div>
+            <div class='col-xs-6'>
+                <div class='text-uppercase text-right header-title'>
+                    <h1>Jeffrey Zic</h1>
+                    <p class='sub-title'>Front End Ninja
+                </div>
+            </div>
         </div>
-        <div class='col-xs-6'>
-          <div class='text-uppercase text-right header-title'>
-            <h1>Jeffrey Zic</h1>
-            <p class='sub-title'>Front End Ninja
-          </div>
-        </div>
-      </div>
     </header>
 
-     <div class='navigation-row row'>
+    <div class='navigation-row row'>
         <div class='col-xs-12'>
             <nav class='navbar navbar-default no-bottom-margin'>
                 <div class='container-fluid'>
@@ -90,16 +91,22 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
                     <div class='collapse navbar-collapse' id='myNavbar'>
 
                         <ul class='nav navbar-nav'>
-                            <li class='active'><a href='http://gixugif.github.io'>Home</a></li>
-                            <li><a href='http://gixugif.github.io/#bio'>About Me</a></li>
+                            <li class='active'><a href='http://gixugif.github.io'>Home</a>
+                            </li>
+                            <li><a href='http://gixugif.github.io/#bio'>About Me</a>
+                            </li>
                             <li><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Porfolio
                 <span class='caret'></span></a>
 
                                 <ul class='dropdown-menu'>
-                                    <li><a href='http://gixugif.github.io/'>Portfolio</a></li>
-                                    <li><a href='#'>Resume</a></li>
-                                    <li><a href='#projects'>Classic Arcade Game</a></li>
-                                    <li><a href='#projects'>Neighborhood Map</a></li>
+                                    <li><a href='http://gixugif.github.io/'>Portfolio</a>
+                                    </li>
+                                    <li><a href='#'>Resume</a>
+                                    </li>
+                                    <li><a href='#projects'>Classic Arcade Game</a>
+                                    </li>
+                                    <li><a href='#projects'>Neighborhood Map</a>
+                                    </li>
                                 </ul>
 
                             </li>
@@ -107,10 +114,14 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
                 <span class='caret'></span></a>
 
                                 <ul class='dropdown-menu'>
-                                    <li><a class='brandico-facebook-rect' href='https://www.facebook.com/?_rdr=p' target='_blank'>facebook</a></li>
-                                    <li><a class='brandico-twitter-bird' href='https://twitter.com/' target='_blank'>twitter</a></li>
-                                    <li><a class='brandico-googleplus-rect' href='https://plus.google.com/' target='_blank'>google-plus</a></li>
-                                    <li><a class='brandico-github' href='https://github.com/' target='_blank'>github</a></li>
+                                    <li><a class='brandico-facebook-rect' href='https://www.facebook.com/?_rdr=p' target='_blank'>facebook</a>
+                                    </li>
+                                    <li><a class='brandico-twitter-bird' href='https://twitter.com/' target='_blank'>twitter</a>
+                                    </li>
+                                    <li><a class='brandico-googleplus-rect' href='https://plus.google.com/' target='_blank'>google-plus</a>
+                                    </li>
+                                    <li><a class='brandico-github' href='https://github.com/' target='_blank'>github</a>
+                                    </li>
                                 </ul>
 
                             </li>
@@ -120,64 +131,64 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
                 </div>
             </nav>
         </div>
-      </div>
+    </div>
 
     <main>
-      <!--
+        <!--
       Everything from here to the <script> tag below is the skeleton of your
       website. Your code will add information to each of the sections of the
       resume below. You can pretty easily figure out what each section will
       display by looking at the id or at what's written between the <h2> tags.
       -->
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='about-me col-xs-12 center-content'>
-            <ul  class='row topContacts'></ul>
-            <div class='row bio'>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='about-me col-xs-12 center-content'>
+                    <ul class='row topContacts'></ul>
+                    <div class='row bio'>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='col-xs-12 section-title workExperience gray'>
-            <h2>Work Experience</h2>
-          </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-xs-12 section-title workExperience gray'>
+                    <h2>Work Experience</h2>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='projects'>
-            <h2>Projects</h2>
-          </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='projects'>
+                    <h2>Projects</h2>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='education gray'>
-            <h2>Education</h2>
-          </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='education gray'>
+                    <h2>Education</h2>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='mapDiv'>
-            <h2>Where I've Lived and Worked</h2>
-          </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='mapDiv'>
+                    <h2>Where I've Lived and Worked</h2>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class='container-fluid'>
-        <div class='row'>
-          <div class='col-xs-12'>
-            <a href='mailto:zic.jeffrey@gmail.com'>
-              <button type='button' class='btn-info btn-block btn-lg connect'>Let's Connect</button>
-            </a>
-          </div>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-xs-12'>
+                    <a href='mailto:zic.jeffrey@gmail.com'>
+                        <button type='button' class='btn-info btn-block btn-lg connect'>Let's Connect</button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
 
-     </main>
+    </main>
 
     <footer>
         <div class='container-fluid'>
@@ -209,41 +220,42 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     -->
 
     <script type='text/javascript'>
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
+        // Notice how all of a sudden there's JavaScript inside this HTML
+        // document? You can write JavaScript between <script> tags. At the end of your
+        // JavaScript, don't forget the closing script tag with the slash (/).
 
 
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+        // Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
-    //   two slashes for all following characters on a single line, or
+        //   two slashes for all following characters on a single line, or
 
-    /*
-    an opening and closing set of slash asterisks for block comments.
-    */
+        /*
+        an opening and closing set of slash asterisks for block comments.
+        */
 
 
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.backgroundColor = '#000';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.backgroundColor = '#000';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = '#000';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = '#000';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = '#000';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-     document.getElementById('lets-connect').style.backgroundColor = '#000';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.backgroundColor = '#000';
-    }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.backgroundColor = '#000';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.backgroundColor = '#000';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.backgroundColor = '#000';
+        }
     </script>
-  </body>
+</body>
+
 </html>
