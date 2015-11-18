@@ -5,6 +5,7 @@ var bio = {
         'mobile': '845-309-7576',
         'email': 'zic.jeffrey@gmail.com',
         'github': 'https://github.com/gixugif',
+        'twitter': 'https://twitter.com/gixugif',
         'location': 'Red Hook, NY'
     },
     'welcomeMessage': 'Hello, welcome to my resume!',
@@ -48,12 +49,22 @@ var bio = {
         });
     },
     'display': function() {
-        $('.about-me').prepend(HTMLheaderRole.replace('%data%', bio.role));
-        $('.about-me').prepend(HTMLheaderName.replace('%data%', bio.name));
-        $('.topContacts').append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile));
-        $('.topContacts').append(HTMLemail.replace(/%data%/gi, bio.contacts.email));
-        $('.topContacts').append(HTMLgithub.replace(/%data%/gi, bio.contacts.github));
-        $('.topContacts').append(HTMLlocation.replace('%data%', bio.contacts.location));
+        var $about = $('.about-me');
+        var $contacts = $('.topContacts');
+        var $footer = $('.footer-contacts');
+
+        $about.prepend(HTMLheaderRole.replace('%data%', bio.role));
+        $about.prepend(HTMLheaderName.replace('%data%', bio.name));
+        $contacts.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile));
+        $contacts.append(HTMLemail.replace(/%data%/gi, bio.contacts.email));
+        $contacts.append(HTMLgithub.replace(/%data%/gi, bio.contacts.github));
+        $contacts.append(HTMLlocation.replace('%data%', bio.contacts.location));
+
+        $footer.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile));
+        $footer.append(HTMLemail.replace(/%data%/gi, bio.contacts.email));
+        $footer.append(HTMLgithub.replace(/%data%/gi, bio.contacts.github));
+        $footer.append(HTMLlocation.replace('%data%', bio.contacts.location));
+
         $('.bio').append(HTMLbioPic.replace('%data%', bio.biopic));
 
         if (bio.skills.length > 0) {
@@ -74,22 +85,20 @@ var education = {
         'name': 'Hofstra',
         'location': 'Hempstead, NY',
         'degree': 'B.S. of Computer Science',
-        'major': 'Comp. Sci',
-        'dates': '2008-2010',
+        'majors': ['Comp. Sci'],
+        'dates': 2010,
         'url': 'http://www.hofstra.edu/home/'
 
-    }, {
-        'name': 'Stonybrook',
-        'location': 'Stonybrook, NY',
-        'degree': 'B.S. of Computer Science',
-        'major': 'Comp. Sci',
-        'dates': '2010',
-        'url': 'http://www.stonybrook.edu/'
     }],
     'onlineCourses': [{
         'title': 'Frontend Development Nanodegree',
         'school': 'Udacity',
-        'date': 'March 2016',
+        'date': 2016,
+        'url': 'https://www.udacity.com/'
+    }, {
+        'title': 'Web Development',
+        'school': 'Udacity',
+        'date': 2012,
         'url': 'https://www.udacity.com/'
     }],
     'display': function() {
@@ -107,31 +116,31 @@ var education = {
                 $('.school').append(HTMLschoolDegree.replace('%data%', education.schools[schoolKey].degree));
                 $('.education-entry:last').append(HTMLschoolDates.replace('%data%', education.schools[schoolKey].dates));
                 $('.education-entry:last').append(HTMLschoolLocation.replace('%data%', education.schools[schoolKey].location));
-                $('.education-entry:last').append(HTMLschoolMajor.replace('%data%', education.schools[schoolKey].major));
+                $('.education-entry:last').append(HTMLschoolMajor.replace('%data%', education.schools[schoolKey].majors));
             }
         }
 
-        $('.education:last').append(HTMLonlineClasses);
+        $('.online').append(HTMLonlineClasses);
 
         for (var onlineCourse in education.onlineCourses) {
 
             if (education.onlineCourses.hasOwnProperty(onlineCourse)) {
-                $('.education').append(HTMLschoolStart);
+                $('.online').append(HTMLonlineStart);
 
                 var newHTMLonlineTitle = HTMLonlineTitle.replace('#', "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001");
                 newHTMLonlineTitle = newHTMLonlineTitle.replace('%data%', education.onlineCourses[onlineCourse].title);
 
-                $('.education-entry:last').append(newHTMLonlineTitle);
+                $('.online-entry:last').append(newHTMLonlineTitle);
 
                 $('.online-school').append(HTMLonlineSchool.replace('%data%', education.onlineCourses[onlineCourse].school));
-                $('.education-entry:last').append(HTMLonlineDates.replace('%data%', education.onlineCourses[onlineCourse].date));
+                $('.online-entry:last').append(HTMLonlineDates.replace('%data%', education.onlineCourses[onlineCourse].date));
 
                 var newHTMLonlineURL = HTMLonlineURL;
 
                 newHTMLonlineURL = newHTMLonlineURL.replace('#', education.onlineCourses[onlineCourse].url);
                 newHTMLonlineURL = newHTMLonlineURL.replace('%data%', education.onlineCourses[onlineCourse].url);
 
-                $('.education-entry:last').append(newHTMLonlineURL);
+                $('.online-entry:last').append(newHTMLonlineURL);
             }
         }
     }
@@ -156,11 +165,10 @@ var work = {
                 var formatLocation = HTMLworkLocation.replace('%data%', work.jobs[job].location);
                 var formatDates = HTMLworkDates.replace('%data%', work.jobs[job].dates);
                 var formatDescription = HTMLworkDescription.replace('%data%', work.jobs[job].description);
-                $('.work-entry:last').append(formatEmployer + formatTitle);
-                $('.work-entry:last').append(formatLocation);
-                $('.work-entry:last').append(formatDates);
-                $('.work-entry:last').append(formatDescription);
-
+                $('.work-entry:last').append(formatEmployer + formatTitle,
+                                            formatLocation,
+                                            formatDates,
+                                            formatDescription);
             }
         }
     }
@@ -180,6 +188,12 @@ var projects = {
         'dates': 'Oct 2015',
         'description': 'Showing off JS, JQuery and JSON. This project serves as an online resume',
         'images': ['./img/resume-600_small.jpg 600w', './img/resume-1000_medium.jpg 1000w', './img/resume-1600_large.jpg 1600w']
+    }, {
+        'title': 'Call Detail Recording',
+        'url': 'https://github.com/Gixugif/CDRecording',
+        'dates': 'Nov 2015',
+        'description': 'Analyzes phone call metadata',
+        'images': ['./img/cdr-600_small.jpg 600w', './img/cdr-1000_medium.jpg 1000w', './img/cdr-1600_large.jpg 1600w']
     }],
     'display': function() {
         for (var proj in projects.project) {
@@ -198,16 +212,6 @@ var projects = {
         }
     }
 };
-
-$(document).click(function(loc) {
-    logClicks(loc.pageX, loc.pageY);
-});
-
-function inName(name) {
-    var names = name.split(' ');
-    var intName = names[0] + ' ' + names[1].toUpperCase();
-    return intName;
-}
 
 bio.display();
 education.display();

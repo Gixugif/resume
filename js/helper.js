@@ -35,11 +35,11 @@ var HTMLworkDates = '<div class="row"><div class="col-xs-1 date-text">%data%</di
 var HTMLworkLocation = '<div class="row"><div class="col-xs-2 location-text">%data%</div></div>';
 var HTMLworkDescription = '<div class="row"><div class="col-xs-8"><p><br>%data%</p></div></div>';
 
-var HTMLprojectStart = '<div class="row project-entry"></div>';
-var HTMLprojectTitle = '<div class="row"><a class="col-xs-2" href="%urlData%">%titleData%</a></div>';
-var HTMLprojectDates = '<div class="row"><div class="col-xs-1 date-text">%data%</div></div>';
-var HTMLprojectDescription = '<div class="row"><div class="col-xs-8"><p><br>%data%</p></div></div>';
-var HTMLprojectImage = '<div class="row"><div class="col-xs-3"><img class="img-rounded img-responsive project_img" srcset="%srcSetData%"' +
+var HTMLprojectStart = '<div class="col-md-6 project-entry"></div>';
+var HTMLprojectTitle = '<div class="row"><a class="col-xs-6" href="%urlData%">%titleData%</a></div>';
+var HTMLprojectDates = '<div class="row"><div class="col-xs-6 date-text">%data%</div></div>';
+var HTMLprojectDescription = '<div class="row"><div class="col-xs-6"><p><br>%data%</p></div></div>';
+var HTMLprojectImage = '<div class="row"><div class="col-xs-6"><img class="img-rounded img-responsive project_img" srcset="%srcSetData%"' +
     ' sizes="(min-width: 766px) 33vw, 100vw" src="%srcData%" alt="%altData%"></a></div></div>';
 
 var HTMLschoolStart = '<div class="row education-entry"></div>';
@@ -49,43 +49,15 @@ var HTMLschoolDates = '<div class="row"><div class="col-xs-1 date-text">%data%</
 var HTMLschoolLocation = '<div class="row"><div class="col-xs-2 location-text">%data%</div></div>';
 var HTMLschoolMajor = '<div class="row"><div class="col-xs-2"><em>Major: %data%</em></div></div><br>';
 
-var HTMLonlineClasses = '<div class="row"><div class="col-xs-2"><h3 class="pad">Online Classes</h3></div></div>';
-var HTMLonlineTitle = '<div class="row"><a class="col-xs-4 online-school" href="#">%data%';
+var HTMLonlineStart = '<div class="col-md-4 online-entry"></div>';
+var HTMLonlineClasses = '<div class="row"><div class="col-md-4"><h3 class="pad">Online Classes</h3></div></div>';
+var HTMLonlineTitle = '<div class="row"><a class="col-md-12 online-school" href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a></div>';
-var HTMLonlineDates = '<div class="row"><div class="col-xs-2 date-text">%data%</div></div>';
-var HTMLonlineURL = '<div class="row"><div class="col-xs-3"><a href="#">%data%</a></div></div><br>';
+var HTMLonlineDates = '<div class="row"><div class="col-md-12 date-text">%data%</div></div>';
+var HTMLonlineURL = '<div class="row"><div class="col-md-12"><a href="#">%data%</a></div></div><br>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div class="map"></div>';
-
-
-/*
-The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
-$(document).ready(function() {
-    $('button').click(function() {
-        var iName = inName() || function() {};
-        $('#name').html(iName);
-    });
-});
-
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
-*/
-clickLocations = [];
-
-function logClicks(x, y) {
-    clickLocations.push({
-        x: x,
-        y: y
-    });
-    console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-    // your code goes here!
-});
-
 
 
 /*
