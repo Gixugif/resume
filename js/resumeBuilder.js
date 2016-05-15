@@ -4,7 +4,7 @@ var bio = {
     'contacts': {
         'mobile': '845-309-7576',
         'email': 'zic.jeffrey@gmail.com',
-        'github': 'https://github.com/gixugif',
+        'github': 'https://github.com/JeffreyZic',
         'twitter': 'https://twitter.com/gixugif',
         'location': 'Red Hook, NY'
     },
