@@ -223,7 +223,8 @@ var projects = {
         'title': 'Call Detail Recording',
         'url': 'https://github.com/Gixugif/CDRecording',
         'dates': 'Nov 2015',
-        'description': 'Analyzes phone call metadata',
+        'description': '<ul><li>Built extendable script with Python 3.x</li>' +
+                        '<li>Quickly analyzes 10,000s of phone call metadata</li></ul>',
         'images': ['./img/cdr-600_small.jpg 600w', './img/cdr-1000_medium.jpg 1000w', './img/cdr-1600_large.jpg 1600w']
     }],
     'display': function() {
