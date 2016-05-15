@@ -40,6 +40,11 @@ var bio = {
         'highlight': "#902D76",
         'label': 'Git/ GitHub'
     }, {
+        'value': 1,
+        'color': "#04C991",
+        'highlight': "#00FFB7",
+        'label': 'Bootstrap'
+    }, {
         'value': 3,
         'color': '#cc00ff',
         'highlight': '#ff00ff',
