@@ -45,6 +45,11 @@ var bio = {
         'highlight': "#00FFB7",
         'label': 'Bootstrap'
     }, {
+        'value': 1,
+        'color': "#000",
+        'highlight': "#484848",
+        'label': 'jQuery'
+    }, {
         'value': 3,
         'color': '#cc00ff',
         'highlight': '#ff00ff',
