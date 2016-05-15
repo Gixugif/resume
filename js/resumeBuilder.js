@@ -157,7 +157,7 @@ var education = {
 
                 $('.online-entry:last').append(newHTMLonlineTitle);
 
-                $('.online-school').append(HTMLonlineSchool.replace('%data%', education.onlineCourses[onlineCourse].school));
+                $('.online-school:last').append(HTMLonlineSchool.replace('%data%', education.onlineCourses[onlineCourse].school));
                 $('.online-entry:last').append(HTMLonlineDates.replace('%data%', education.onlineCourses[onlineCourse].date));
 
                 var newHTMLonlineURL = HTMLonlineURL;
