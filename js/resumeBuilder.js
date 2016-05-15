@@ -95,11 +95,10 @@ var bio = {
 
         if (bio.skills.length > 0) {
             $('.bio').append(HTMLskillsStart);
-            for (var skill in bio.skills) {
-                if (bio.skills.hasOwnProperty(skill)) {
-                    $('.skills').append(HTMLskills.replace('%data%', bio.skills[skill].label));
-                }
-            }
+            bio.skills.forEach(function(skill) {
+                $('.skills').append(HTMLskills.replace('%data%', skill.label));
+
+            });
             $('.bio').append(HTMLskillsChart);
             bio.polarChart(bio.skills);
         }
