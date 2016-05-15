@@ -35,6 +35,11 @@ var bio = {
         'highlight': "#FF5A5E",
         'label': 'frontend development'
     }, {
+        'value': 1,
+        'color': "#7D1662",
+        'highlight': "#902D76",
+        'label': 'Git/ GitHub'
+    }, {
         'value': 3,
         'color': '#cc00ff',
         'highlight': '#ff00ff',
