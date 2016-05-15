@@ -238,6 +238,13 @@ body
     padding-left: 15px;
 }
 
+.education-title {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+}
+
 .date-text
 {
     font-style: italic;
