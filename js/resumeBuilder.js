@@ -55,6 +55,11 @@ var bio = {
         'highlight': "#428603",
         'label': 'Knockout'
     }, {
+        'value': 1,
+        'color': "#a45100",
+        'highlight': "#d16700",
+        'label': 'Jasmine'
+    }, {
         'value': 3,
         'color': '#cc00ff',
         'highlight': '#ff00ff',
