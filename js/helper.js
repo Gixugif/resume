@@ -45,7 +45,7 @@ var HTMLprojectImage = '<div class="row"><div class="col-xs-6"><img class="img-r
 var HTMLschoolStart = '<div class="row education-entry"></div>';
 var HTMLschoolName = '<div class="row"><div class="col-xs-4 school"><a href="#">%data%</a>';
 var HTMLschoolDegree = ' -- %data%</div></div>';
-var HTMLschoolDates = '<div class="row"><div class="col-xs-1 date-text">%data%</div></div>';
+var HTMLschoolDates = '<div class="row"><div class="col-xs-3 date-text">%data%</div></div>';
 var HTMLschoolLocation = '<div class="row"><div class="col-xs-2 location-text">%data%</div></div>';
 var HTMLschoolMajor = '<div class="row"><div class="col-xs-2"><em>Major: %data%</em></div></div><br>';
 
