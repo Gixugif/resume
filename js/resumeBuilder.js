@@ -147,27 +147,24 @@ var education = {
 
         $('.online').append(HTMLonlineClasses);
 
-        for (var onlineCourse in education.onlineCourses) {
+        education.onlineCourses.forEach(function(onlineCourse) {
+            $('.online').append(HTMLonlineStart);
 
-            if (education.onlineCourses.hasOwnProperty(onlineCourse)) {
-                $('.online').append(HTMLonlineStart);
+            var newHTMLonlineTitle = HTMLonlineTitle.replace('#', "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001");
+            newHTMLonlineTitle = newHTMLonlineTitle.replace('%data%', onlineCourse.title);
 
-                var newHTMLonlineTitle = HTMLonlineTitle.replace('#', "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001");
-                newHTMLonlineTitle = newHTMLonlineTitle.replace('%data%', education.onlineCourses[onlineCourse].title);
+            $('.online-entry:last').append(newHTMLonlineTitle);
 
-                $('.online-entry:last').append(newHTMLonlineTitle);
+            $('.online-school:last').append(HTMLonlineSchool.replace('%data%', onlineCourse.school));
+            $('.online-entry:last').append(HTMLonlineDates.replace('%data%', onlineCourse.date));
 
-                $('.online-school:last').append(HTMLonlineSchool.replace('%data%', education.onlineCourses[onlineCourse].school));
-                $('.online-entry:last').append(HTMLonlineDates.replace('%data%', education.onlineCourses[onlineCourse].date));
+            var newHTMLonlineURL = HTMLonlineURL;
 
-                var newHTMLonlineURL = HTMLonlineURL;
+            newHTMLonlineURL = newHTMLonlineURL.replace('#', onlineCourse.url);
+            newHTMLonlineURL = newHTMLonlineURL.replace('%data%', onlineCourse.url);
 
-                newHTMLonlineURL = newHTMLonlineURL.replace('#', education.onlineCourses[onlineCourse].url);
-                newHTMLonlineURL = newHTMLonlineURL.replace('%data%', education.onlineCourses[onlineCourse].url);
-
-                $('.online-entry:last').append(newHTMLonlineURL);
-            }
-        }
+            $('.online-entry:last').append(newHTMLonlineURL);
+        });
     }
 };
 
