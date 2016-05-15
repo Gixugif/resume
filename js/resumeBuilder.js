@@ -111,7 +111,7 @@ var education = {
         'location': 'Hempstead, NY',
         'degree': 'B.S. of Computer Science',
         'majors': ['Comp. Sci'],
-        'dates': 2010,
+        'dates': 'September 2008 - May 2010 (Not Gruaduated)',
         'url': 'http://www.hofstra.edu/home/'
 
     }],
