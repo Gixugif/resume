@@ -78,17 +78,18 @@ var bio = {
         var $contacts = $('.topContacts');
         var $footer = $('.footer-contacts');
 
-        $about.prepend(HTMLheaderRole.replace('%data%', bio.role));
-        $about.prepend(HTMLheaderName.replace('%data%', bio.name));
-        $contacts.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile));
-        $contacts.append(HTMLemail.replace(/%data%/gi, bio.contacts.email));
-        $contacts.append(HTMLgithub.replace(/%data%/gi, bio.contacts.github));
-        $contacts.append(HTMLlocation.replace('%data%', bio.contacts.location));
+        $about.prepend(HTMLheaderRole.replace('%data%', bio.role))
+        .prepend(HTMLheaderName.replace('%data%', bio.name));
 
-        $footer.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile));
-        $footer.append(HTMLemail.replace(/%data%/gi, bio.contacts.email));
-        $footer.append(HTMLgithub.replace(/%data%/gi, bio.contacts.github));
-        $footer.append(HTMLlocation.replace('%data%', bio.contacts.location));
+        $contacts.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile))
+        .append(HTMLemail.replace(/%data%/gi, bio.contacts.email))
+        .append(HTMLgithub.replace(/%data%/gi, bio.contacts.github))
+        .append(HTMLlocation.replace('%data%', bio.contacts.location));
+
+        $footer.append(HTMLmobile.replace(/%data%/gi, bio.contacts.mobile))
+        .append(HTMLemail.replace(/%data%/gi, bio.contacts.email))
+        .append(HTMLgithub.replace(/%data%/gi, bio.contacts.github))
+        .append(HTMLlocation.replace('%data%', bio.contacts.location));
 
         $('.bio').append(HTMLbioPic.replace('%data%', bio.biopic));
 
