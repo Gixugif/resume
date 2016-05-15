@@ -228,20 +228,18 @@ var projects = {
         'images': ['./img/cdr-600_small.jpg 600w', './img/cdr-1000_medium.jpg 1000w', './img/cdr-1600_large.jpg 1600w']
     }],
     'display': function() {
-        for (var proj in projects.project) {
-            if (projects.project.hasOwnProperty(proj)) {
-                $('.projects').append(HTMLprojectStart);
-                var projectTitle = HTMLprojectTitle.replace('%titleData%', projects.project[proj].title);
-                projectTitle = projectTitle.replace('%urlData%', projects.project[proj].url);
-                $('.project-entry:last').append(projectTitle);
-                $('.project-entry:last').append(HTMLprojectDates.replace('%data%', projects.project[proj].dates));
-                $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', projects.project[proj].description));
-                imgSrcStr = HTMLprojectImage.replace('%srcSetData%', projects.project[proj].images.join(','));
-                imgSrcStr = imgSrcStr.replace('%srcData%', projects.project[proj].images[0]);
-                imgSrcStr = imgSrcStr.replace('%altData%', projects.project[proj].title);
-                $('.project-entry:last').append(imgSrcStr);
-            }
-        }
+        projects.project.forEach(function(proj) {
+            $('.projects').append(HTMLprojectStart);
+            var projectTitle = HTMLprojectTitle.replace('%titleData%', proj.title);
+            projectTitle = projectTitle.replace('%urlData%', proj.url);
+            $('.project-entry:last').append(projectTitle);
+            $('.project-entry:last').append(HTMLprojectDates.replace('%data%',proj.dates));
+            $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', proj.description));
+            imgSrcStr = HTMLprojectImage.replace('%srcSetData%', proj.images.join(','));
+            imgSrcStr = imgSrcStr.replace('%srcData%',proj.images[0]);
+            imgSrcStr = imgSrcStr.replace('%altData%', proj.title);
+            $('.project-entry:last').append(imgSrcStr);
+        });
     }
 };
 
