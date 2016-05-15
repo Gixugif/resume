@@ -1,6 +1,6 @@
 var bio = {
     'name': 'Jeff',
-    'role': 'Jr. System Administrator',
+    'role': 'Network Administrator',
     'contacts': {
         'mobile': '845-309-7576',
         'email': 'zic.jeffrey@gmail.com',
@@ -174,7 +174,7 @@ var education = {
 var work = {
     'jobs': [{
         'employer': 'Rhinebeck Animal Hospital',
-        'title': 'Jr. Sysadmin',
+        'title': 'Network Administrator',
         'location': 'Rhinebeck, NY',
         'dates': 'July 2012-current',
         'description': 'Provided technical support to a staff of over 30 people, ' +
