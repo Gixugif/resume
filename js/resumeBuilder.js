@@ -128,22 +128,20 @@ var education = {
     }],
     'display': function() {
 
-        for (var schoolKey in education.schools) {
+        education.schools.forEach(function(school) {
 
-            if (education.schools.hasOwnProperty(schoolKey)) {
-                $('.education').append(HTMLschoolStart);
+            $('.education').append(HTMLschoolStart);
 
-                var newHTMLschoolName = HTMLschoolName;
-                newHTMLschoolName = newHTMLschoolName.replace('#', education.schools[schoolKey].url);
-                newHTMLschoolName = newHTMLschoolName.replace('%data%', education.schools[schoolKey].name);
+            var newHTMLschoolName = HTMLschoolName;
+            newHTMLschoolName = newHTMLschoolName.replace('#', school.url);
+            newHTMLschoolName = newHTMLschoolName.replace('%data%', school.name);
 
-                $('.education-entry:last').append(newHTMLschoolName);
-                $('.school').append(HTMLschoolDegree.replace('%data%', education.schools[schoolKey].degree));
-                $('.education-entry:last').append(HTMLschoolDates.replace('%data%', education.schools[schoolKey].dates));
-                $('.education-entry:last').append(HTMLschoolLocation.replace('%data%', education.schools[schoolKey].location));
-                $('.education-entry:last').append(HTMLschoolMajor.replace('%data%', education.schools[schoolKey].majors));
-            }
-        }
+            $('.education-entry:last').append(newHTMLschoolName);
+            $('.school').append(HTMLschoolDegree.replace('%data%', school.degree));
+            $('.education-entry:last').append(HTMLschoolDates.replace('%data%', school.dates));
+            $('.education-entry:last').append(HTMLschoolLocation.replace('%data%', school.location));
+            $('.education-entry:last').append(HTMLschoolMajor.replace('%data%', school.majors));
+        });
 
         $('.online').append(HTMLonlineClasses);
 
