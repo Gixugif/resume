@@ -205,11 +205,13 @@ var projects = {
                         '<li>Uses asynchronous tests</li></ul>',
         'images': ['./img/feedReader-600_small.jpg 600w', './img/feedReader-1000_medium.jpg 1000w', './img/feedReader-1600_large.jpg 1600w']
     }, {
-        'title': 'Resume',
-        'url': '#',
-        'dates': 'Oct 2015',
-        'description': 'Showing off JS, JQuery and JSON. This project serves as an online resume',
-        'images': ['./img/resume-600_small.jpg 600w', './img/resume-1000_medium.jpg 1000w', './img/resume-1600_large.jpg 1600w']
+        'title': 'Neighborhood Map',
+        'url': 'https://github.com/Gixugif/neighborhood-map',
+        'dates': 'May 2016',
+        'description': '<ul><li>Created web app using Google Maps and Yelp Search API</li>' +
+                        '<li>Makes asynchronous calls to 3rd party APIs</li>' +
+                        '<li>Responsive, practical user experience</li></ul>',
+        'images': ['./img/map-600_small.jpg 600w', './img/map-1000_medium.jpg 1000w', './img/map-1600_large.jpg 1600w']
     }, {
         'title': 'Call Detail Recording',
         'url': 'https://github.com/Gixugif/CDRecording',
