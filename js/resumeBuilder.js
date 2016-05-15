@@ -217,7 +217,7 @@ var projects = {
         'url': 'https://github.com/Gixugif/Space-Invaders',
         'dates': 'January 2016',
         'description':  '<ul><li>Created bug-free, object-oriented JavaScript game in HTML5 canvas</li>' +
-                        '<li>Game loop able to enter different states/li></ul>',
+                        '<li>Game loop able to enter different states</li></ul>',
         'images': ['./img/galaga-600_small.jpg 600w', './img/galaga-1000_medium.jpg 1000w', './img/galaga-1600_large.jpg 1600w']
     }, {
         'title': 'Call Detail Recording',
