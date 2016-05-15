@@ -177,8 +177,9 @@ var work = {
         'title': 'Network Administrator',
         'location': 'Rhinebeck, NY',
         'dates': 'July 2012-current',
-        'description': 'Provided technical support to a staff of over 30 people, ' +
-            'with 30 VoIP Phones and over 20 computers; improved documentation for building and running systems to increase clarity and efficiency; wrote script to analyze phone call data'
+        'description': '<ul><li>Provide technical support to a staff of over 30 people, with 30 VoIP Phones and over 20 computers</li>' +
+            '<li>Improved documentation for building and running systems to increase clarity and efficiency</li>' +
+            '<li>Wrote script to analyze phone call metadata</li></ul>'
     }],
     'display': function() {
 
