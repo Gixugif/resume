@@ -204,7 +204,7 @@ var work = {
 var projects = {
     'project': [{
         'title': 'Portfolio',
-        'url': 'http://gixugif.github.io',
+        'url': 'http://JeffreyZic.github.io/gixugif.github.io',
         'dates': 'Oct 2015',
         'description': 'Showing off HTML, CSS, and web page design. This project serves as a front page to show off other projects',
         'images': ['./img/portfolio-600_small.jpg 600w', './img/portfolio-1000_medium.jpg 1000w', './img/portfolio-1600_large.jpg 1600w']
