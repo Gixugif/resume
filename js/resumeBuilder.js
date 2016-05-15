@@ -199,14 +199,14 @@ var work = {
 var projects = {
     'project': [{
         'title': 'Feed Reader',
-        'url': 'https://github.com/Gixugif/frontend-nanodegree-feedreader',
+        'url': 'https://github.com/JeffreyZic/frontend-nanodegree-feedreader',
         'dates': 'May 2016',
         'description':  '<ul><li>Built tests using Jasmine framework</li>' +
                         '<li>Uses asynchronous tests</li></ul>',
         'images': ['./img/feedReader-600_small.jpg 600w', './img/feedReader-1000_medium.jpg 1000w', './img/feedReader-1600_large.jpg 1600w']
     }, {
         'title': 'Neighborhood Map',
-        'url': 'https://github.com/Gixugif/neighborhood-map',
+        'url': 'https://github.com/JeffreyZic/neighborhood-map',
         'dates': 'May 2016',
         'description': '<ul><li>Created web app using Google Maps and Yelp Search API</li>' +
                         '<li>Makes asynchronous calls to 3rd party APIs</li>' +
@@ -214,14 +214,14 @@ var projects = {
         'images': ['./img/neighborhood-600_small.jpg 600w', './img/neighborhood-1000_medium.jpg 1000w', './img/neighborhood-1600_large.jpg 1600w']
     }, {
         'title': 'Space Invaders',
-        'url': 'https://github.com/Gixugif/Space-Invaders',
+        'url': 'https://github.com/JeffreyZic/Space-Invaders',
         'dates': 'January 2016',
         'description':  '<ul><li>Created bug-free, object-oriented JavaScript game in HTML5 canvas</li>' +
                         '<li>Game loop able to enter different states</li></ul>',
         'images': ['./img/galaga-600_small.jpg 600w', './img/galaga-1000_medium.jpg 1000w', './img/galaga-1600_large.jpg 1600w']
     }, {
         'title': 'Call Detail Recording',
-        'url': 'https://github.com/Gixugif/CDRecording',
+        'url': 'https://github.com/JeffreyZic/CDRecording',
         'dates': 'Nov 2015',
         'description': '<ul><li>Built extendable script with Python 3.x</li>' +
                         '<li>Quickly analyzes 10,000s of phone call metadata</li></ul>',
