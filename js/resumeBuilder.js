@@ -198,11 +198,12 @@ var work = {
 
 var projects = {
     'project': [{
-        'title': 'Portfolio',
-        'url': 'http://JeffreyZic.github.io/gixugif.github.io',
-        'dates': 'Oct 2015',
-        'description': 'Showing off HTML, CSS, and web page design. This project serves as a front page to show off other projects',
-        'images': ['./img/portfolio-600_small.jpg 600w', './img/portfolio-1000_medium.jpg 1000w', './img/portfolio-1600_large.jpg 1600w']
+        'title': 'Feed Reader',
+        'url': 'https://github.com/Gixugif/frontend-nanodegree-feedreader',
+        'dates': 'May 2016',
+        'description':  '<ul><li>Built tests using Jasmine framework</li>' +
+                        '<li>Uses asynchronous tests</li></ul>',
+        'images': ['./img/feedReader-600_small.jpg 600w', './img/feedReader-1000_medium.jpg 1000w', './img/feedReader-1600_large.jpg 1600w']
     }, {
         'title': 'Resume',
         'url': '#',
