@@ -38,7 +38,7 @@ var HTMLworkDescription = '<div class="row"><div class="col-xs-8"><p><br>%data%<
 var HTMLprojectStart = '<div class="col-md-6 project-entry"></div>';
 var HTMLprojectTitle = '<div class="row"><a class="col-xs-6" href="%urlData%">%titleData%</a></div>';
 var HTMLprojectDates = '<div class="row"><div class="col-xs-6 date-text">%data%</div></div>';
-var HTMLprojectDescription = '<div class="row"><div class="col-xs-6"><p><br>%data%</p></div></div>';
+var HTMLprojectDescription = '<div class="row proj-desc"><div class="col-xs-6"><p><br>%data%</p></div></div>';
 var HTMLprojectImage = '<div class="row"><div class="col-xs-6"><img class="img-rounded img-responsive project_img" srcset="%srcSetData%"' +
     ' sizes="(min-width: 766px) 33vw, 100vw" src="%srcData%" alt="%altData%"></a></div></div>';
 

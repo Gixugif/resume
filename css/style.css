@@ -233,6 +233,10 @@ body
     padding: 0 5% !important;
 }
 
+.proj-desc {
+    height: 135px;
+}
+
 .date-text
 {
     font-style: italic;
