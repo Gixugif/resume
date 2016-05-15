@@ -211,7 +211,7 @@ var projects = {
         'description': '<ul><li>Created web app using Google Maps and Yelp Search API</li>' +
                         '<li>Makes asynchronous calls to 3rd party APIs</li>' +
                         '<li>Responsive, practical user experience</li></ul>',
-        'images': ['./img/map-600_small.jpg 600w', './img/map-1000_medium.jpg 1000w', './img/map-1600_large.jpg 1600w']
+        'images': ['./img/neighborhood-600_small.jpg 600w', './img/neighborhood-1000_medium.jpg 1000w', './img/neighborhood-1600_large.jpg 1600w']
     }, {
         'title': 'Call Detail Recording',
         'url': 'https://github.com/Gixugif/CDRecording',
