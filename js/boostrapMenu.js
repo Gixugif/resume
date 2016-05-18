@@ -1,4 +1,4 @@
-var bootstrapMenu = "<div class='col-xs-12'>" +
+var bootstrapMenu = "<div class='no-padding col-xs-12'>" +
     "<nav class='navbar navbar-default no-bottom-margin'>" +
     "<div class='container-fluid'>" +
     "<div class='navbar-header'>" +
@@ -7,24 +7,28 @@ var bootstrapMenu = "<div class='col-xs-12'>" +
     "<span class='icon-bar'></span>" +
     "<span class='icon-bar'></span>" +
     "</button>" +
-    "<a class='navbar-brand' href='http://gixugif.github.io'>My Portfolio</a>" +
+    "<a class='navbar-brand' href='http://jeffreyzic.github.io/gixugif.github.io'>My Portfolio</a>" +
     "</div>" +
     "<div class='collapse navbar-collapse' id='myNavbar'>" +
     "<ul class='nav navbar-nav'>" +
-    "<li class='active'><a href='http://gixugif.github.io'>Home</a>" +
+    "<li class='1'><a href='http://jeffreyzic.github.io/gixugif.github.io'>Home</a>" +
     "</li>" +
-    "<li><a href='http://gixugif.github.io/#bio'>About Me</a>" +
+    "<li><a href='http://jeffreyzic.github.io/gixugif.github.io/#bio'>About Me</a>" +
     "</li>" +
     "<li><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Porfolio" +
     "<span class='caret'></span></a>" +
     "<ul class='dropdown-menu'>" +
-    "<li><a href='http://gixugif.github.io/'>Portfolio</a>" +
+    "<li class='1'><a href='http://jeffreyzic.github.io/gixugif.github.io/index.html'>Portfolio</a>" +
     "</li>" +
-    "<li><a href='#'>Resume</a>" +
+    "<li class='2'><a href='http://jeffreyzic.github.io/gixugif.github.io/Resume/index.html'>Resume</a>" +
     "</li>" +
-    "<li><a href='#projects'>Classic Arcade Game</a>" +
+    "<li class='3'><a href='http://jeffreyzic.github.io/gixugif.github.io/frontend-nanodegree-arcade-game-master/index.html'>Classic Arcade Game</a>" +
     "</li>" +
-    "<li><a href='#projects'>Neighborhood Map</a>" +
+    "<li class='4'><a href='http://jeffreyzic.github.io/gixugif.github.io/neighborhood-map/index.html'>Neighborhood Map</a>" +
+    "</li>" +
+    "<li class='5'><a href='http://jeffreyzic.github.io/gixugif.github.io/Website_Optimization/views/pizza.html'>Website Optimization</a>" +
+    "</li>" +
+    "<li class='6'><a href='http://jeffreyzic.github.io/gixugif.github.io/Feedreader_Testing/index.html'>Feedreader Testing</a>" +
     "</li>" +
     "</ul>" +
     "</li>" +
