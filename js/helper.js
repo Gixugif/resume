@@ -14,7 +14,7 @@ var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<div class="col-sm-2 cent "><h3 class="skills-h3">Skills at a Glance:</h3><ul class="skills"></ul></div>';
 var HTMLskills = '<li><span class="white-text">%data%</span></li>';
-var HTMLskillsChart = '<div class="col-sm-2 cent"><canvas class="skills-chart" width="300" height="300"></canvas></div>';
+var HTMLskillsChart = '<div class="col-sm-2 no-pad"><canvas class="skills-chart" width="300" height="300"></canvas></div>';
 
 var HTMLworkStart = '<div class="row work-entry"></div>';
 var HTMLworkEmployer = '<div class="row"><a class="col-xs-4" href="#">%data%';
